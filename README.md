@@ -179,18 +179,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Uses [aicspylibczi](https://github.com/AllenCellModeling/aicspylibczi) for .czi file handling
 - Inspired by the need for reproducible microscopy analysis workflows
 
-## 📚 Citation
-
-If you use this pipeline in your research, please cite:
-
-```bibtex
-@software{cell_segmentation_pipeline,
-  title = {Cell Segmentation and Co-localization Analysis Pipeline},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/cell-segmentation-pipeline}
-}
-```
 
 ## 🐛 Issues and Support
 
