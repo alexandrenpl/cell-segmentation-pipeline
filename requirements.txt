@@ -1,49 +1,42 @@
-# Cell Segmentation and Analysis Pipeline Requirements
+# Cell Segmentation and Analysis Pipeline - Essential Dependencies
+# Core dependencies for the cell segmentation pipeline
+
 # Core scientific computing
-numpy>=1.21.0
-pandas>=1.3.0
+numpy==2.2.6
+pandas==2.2.3
+scipy==1.15.3
 
 # Image processing and computer vision
-scikit-image>=0.19.0
-tifffile>=2021.7.2
-opencv-python>=4.5.0
+scikit-image==0.25.2
+tifffile==2025.5.10
+opencv-python-headless==4.11.0.86
+imageio==2.37.0
+imagecodecs==2025.3.30
 
-# Machine learning and cell segmentation
-cellpose>=4.0.0
-torch>=1.10.0
-torchvision>=0.11.0
+# Cell segmentation - main library
+cellpose==4.0.3
 
 # Microscopy file formats
-aicspylibczi>=3.0.0
+aicspylibczi==3.3.1
 
 # ROI file handling
-roifile>=2021.6.6
+roifile==2025.5.10
 
 # Plotting and visualization
-matplotlib>=3.5.0
+matplotlib==3.10.3
 
-# File compression
-zipfile-deflate64>=0.2.0
+# Jupyter notebook support
+jupyterlab==4.4.2
+notebook==7.4.2
+ipykernel==6.29.5
 
-# XML processing (usually included in Python standard library)
-# xml.etree.ElementTree - built-in
+# PyTorch (for cellpose)
+torch==2.7.0
+torchvision==0.22.0
 
-# Path handling (usually included in Python standard library)
-# pathlib - built-in
+# Additional utilities
+tqdm==4.67.1
+pathlib2==2.3.7
 
-# Regular expressions (usually included in Python standard library)
-# re - built-in
-
-# Operating system interface (usually included in Python standard library)
-# os - built-in
-
-# Time utilities (usually included in Python standard library)  
-# time - built-in
-
-# Optional: Jupyter notebook support
-jupyter>=1.0.0
-ipykernel>=6.0.0
-
-# Optional: GPU acceleration (uncomment if using GPU)
-# cupy-cuda11x>=9.0.0  # For CUDA 11.x
-# cupy-cuda12x>=12.0.0  # For CUDA 12.x 
+# Note: Other dependencies will be installed automatically as needed
+# For GPU support, the CUDA libraries are already included in torch
